@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Diri</title>
+
+    <style>
+        * {
+            margin: 10px 15px;
+            background-color: beige;
+        }
+        img {
+        border-radius: 50%;
+        width: 200px;
+        height: auto;
+        display: block;
+        margin: 0 auto 20px auto;
+        }
+        table {
+        margin: 15px;
+        border-collapse: collapse;
+        }
+        th, td {
+        border: 2px solid black;
+        padding: 10px;
+        }
+        th {
+        background-color:darkred;
+        }
+        .data-diri {
+            display: flex;
+            justify-content: center;
+        }
+        .judul {
+            color:darkred;
+        }
+        .subjudul {
+            color:darkred;
+        }
+        .judul-tabel {
+            color:beige;
+        }
+        .media-sosial {
+            display: flex;
+            justify-content:flex-start;
+            margin-left:-40px;
+        }
+        .media-sosial li{
+            list-style-type: none;
+        }
+        .media-sosial li a{
+            text-decoration: none;
+            color: blue;
+        }
+        .media-sosial li a:hover {
+            color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="judul">Profil Diri</h1>
+    <img src="assets/foto.jpg" alt="Foto Nathanael Oliver">
+    <p class="data-diri">
+        Nama: Nathanael Oliver Amadhika Yuswana<br><br>
+        Tempat/Tanggal Lahir: Bandung, 31 Mei 2006
+    </p><br>
+
+    <h2 class="subjudul">Deskripsi Diri</h2>
+    <p>Saya adalah seorang mahasiswa Teknik Informatika di ITS.
+        Saat ini saya berada di semester 2 dan sedang mendalami bidang Software Engineering. Saya senang memperlajari hal baru,
+        khususnya terkait teknologi, serta aktif di kepanitiaan untuk menunjang soft skill saya.
+    </p><br>
+
+    <h2 class="subjudul">Hobi Saya</h2>
+    <ul>
+        <li>Membaca</li>
+        <li>Berolahraga</li>
+        <li>Main game strategi</li>
+        <li>Belajar hal baru</li>
+    </ul><br>
+
+    <table>
+        <tr>
+            <th colspan="2" class="judul-tabel">Riwayat Pendidikan</th>
+        </tr>
+        <tr>
+            <td>SD</td>
+            <td>SDK 3 Bina Bakti</td>
+        </tr>
+        <tr>
+            <td>SMP</td>
+            <td>SMPK 3 Bina Bakti</td>
+        </tr>
+        <tr>
+            <td>SMA</td>
+            <td>SMAK 3 Bina Bakti</td>
+        </tr>
+    </table><br>
+
+    <h2 class="subjudul">Hubungi Saya</h2>
+    <form action="#" method="post">
+    <label for="nama">Nama:</label><br>
+    <input type="text" id="nama" name="nama" placeholder="Masukkan nama"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Masukkan email"><br>
+
+    <label for="pesan">Pesan:</label><br>
+    <textarea id="pesan" name="pesan" rows="5" cols="30" placeholder="Tulis pesan Anda"></textarea><br>
+
+    <button type="submit">Kirim</button>
+    </form>
+
+
+    <h2 class="subjudul">Media Sosial</h2>
+    <ul class="media-sosial">
+        <li><a href="https://www.instagram.com/nathanael.oliver/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/nathanael-oliver-1036452ba/" target="_blank">Linkedin</a></li>
+    </ul> 
+</body>
+</html>
